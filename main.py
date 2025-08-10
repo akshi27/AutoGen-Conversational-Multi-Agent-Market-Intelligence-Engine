@@ -1,68 +1,63 @@
-import os
-import json
-from dotenv import load_dotenv
+"""
+Main entry point for the AutoGen-based Conversational Multi-Agentic AI Market Intelligence System.
 
-# ====== Load env vars ======
-load_dotenv()
-
-# ====== Import agents ======
-from agents.orchestrator_agent import orchestrator_agent
-from agents.planning_agent import planning_agent
-from agents.scraper_agent_ecommerce import ecommerce_scraper_agent
-from agents.scraper_agent_google import google_scraper_agent
-from agents.scraper_agent_social import social_scraper_agent
-from agents.insight_agent import insight_agent
-
-# ====== Mission ======
-MISSION = """
-Collect data for smart fan and BLDC fan brands:
-1. E-commerce platforms
-2. Google & YouTube
-3. Social media
-Then process them to generate actionable market insights.
+This script runs the entire pipeline:
+1. UserProxyAgent passes mission to PlannerAgent
+2. PlannerAgent creates the execution plan
+3. OrchestratorAgent coordinates scraping agents:
+   - Ecommerce/Reddit Agent
+   - Google/YouTube Agent
+   - Social Media (X) Agent
+4. InsightAgent processes all aggregated results into a strategic report
+5. Final outputs saved in /data/processed/ and /data/output/
 """
 
-# ====== File save helpers ======
-def save_json(data, filepath):
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"💾 Saved: {filepath}")
+import os
+from agents.planning_agent import create_plan
+from agents.orchestrator_agent import OrchestratorWrapper
+from autogen.agentchat import ConversableAgent
 
-# ====== Main workflow ======
-def main():
-    print("\n🚀 Starting Multi-Agent Data Collection Pipeline...\n")
+# Mission text — you can change this for different runs
+DEFAULT_MISSION = "Generate a comprehensive competitive market analysis for Atomberg smart fans"
 
-    # Step 1: Orchestrator starts mission
-    orchestrator_agent.receive_message(MISSION, sender="human")
+# LLM configuration (Groq's llama-3.3-70b-versatile in this case)
+LLM_CONFIG = {
+    "config_list": [
+        {
+            "model": "llama-3.3-70b-versatile",
+            "api_key": os.getenv("GROQ_API_KEY", "")
+        }
+    ],
+    "api_key_env": "GROQ_API_KEY"
+}
 
-    # Step 2: Planning agent creates a plan
-    plan = planning_agent.create_plan(MISSION)
-    print("📝 Plan created:", plan)
+def run_pipeline(mission: str):
+    """Run the full multi-agent pipeline for the given mission."""
+    print("\n[MAIN] Starting Multi-Agent Market Intelligence Pipeline")
+    print(f"[MAIN] Mission: {mission}")
 
-    # Step 3: Run scrapers
-    print("\n🔍 Running E-commerce scraper...")
-    ecommerce_data = ecommerce_scraper_agent.run()
-    save_json(ecommerce_data, "data/raw/ecommerce_data.json")
+    # Step 1: Create User Proxy Agent
+    user_agent = ConversableAgent(
+        name="UserProxyAgent",
+        system_message="You are the user proxy that provides the mission to the Orchestrator.",
+        llm_config=LLM_CONFIG,
+        human_input_mode="NEVER"
+    )
 
-    print("\n🔍 Running Google/YouTube scraper...")
-    google_data = google_scraper_agent.run()
-    save_json(google_data, "data/raw/google_youtube_data.json")
+    # Step 2: Generate plan via Planner Agent
+    print("[MAIN] Creating plan via PlannerAgent...")
+    plan = create_plan(mission)
+    print("[MAIN] Plan created.")
 
-    print("\n🔍 Running Social Media scraper...")
-    social_data = social_scraper_agent.run()
-    save_json(social_data, "data/raw/social_data.json")
+    # Step 3: Orchestrator runs scraping agents and Insight Agent
+    orchestrator = OrchestratorWrapper(llm_config=LLM_CONFIG)
+    results = orchestrator.run(plan, run_insights=True)
 
-    # Step 4: Generate insights
-    print("\n🧠 Generating insights...")
-    insights = insight_agent.run({
-        "ecommerce": ecommerce_data,
-        "google_youtube": google_data,
-        "social": social_data
-    })
-    save_json(insights, "data/insights/final_report.json")
+    print("\n[MAIN] Pipeline execution complete!")
+    print(f"[MAIN] Processed insight report saved to /data/processed/analysis_report.json")
+    print(f"[MAIN] Pipeline summary saved to /data/output/")
 
-    print("\n✅ Pipeline completed. All files saved in 'data/raw/' and 'data/insights/'\n")
+    return results
 
 if __name__ == "__main__":
-    main()
+    run_pipeline(DEFAULT_MISSION)
