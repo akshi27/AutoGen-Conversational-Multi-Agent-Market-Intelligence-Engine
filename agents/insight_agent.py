@@ -1,16 +1,15 @@
 """
-Insight agent: conversational wrapper around your existing insight generation code.
+Insight agent: conversational wrapper around the existing insight generation code.
 Exposes insight_agent (Conversable) and insight_agent_handle_task(aggregated) which runs analysis.
 
-This file by default uses the generate_insights() function from the agents/insight_agent.py you had earlier (if present).
-If you instead kept insight_generator in project root under tools, adapt import accordingly.
+This file by default uses the generate_insights() function.
 """
 from __future__ import annotations
 import os, traceback, time, json
 from autogen.agentchat import ConversableAgent
 from typing import Dict, Any
 
-# Try to import the in-package generate_insights (if you've placed the big insight code as agents/insight_impl.py or similar).
+# Try to import the in-package generate_insights 
 # The code below expects generate_insights(aggregated) or generate_insights(use_groq=False) to be available.
 
 LLM_CONFIG = {"config_list": [{"model": "llama3", "api_key": os.getenv("GROQ_API_KEY","")}], "api_key_env": "GROQ_API_KEY"}
@@ -29,7 +28,7 @@ try:
 except Exception:
     generate_insights_impl = None
 
-# Fallback: try to import root-level insight_generator (if you kept it there)
+# Fallback: try to import root-level insight_generator
 if generate_insights_impl is None:
     try:
         from .. import insight_generator as root_insight_module
