@@ -10,7 +10,7 @@ from autogen.agentchat import ConversableAgent, UserProxyAgent
 from .planning_agent import create_plan
 from .orchestrator_agent import OrchestratorWrapper
 
-# Minimal LLM config placeholder — set to your LLM provider config or env variables
+# Minimal LLM config placeholder — set to Groq LLM provider config and env variables
 LLM_CONFIG = {"config_list": [{"model": "llama3", "api_key": os.getenv("GROQ_API_KEY", "")}], "api_key_env": "GROQ_API_KEY"}
 
 def main():
