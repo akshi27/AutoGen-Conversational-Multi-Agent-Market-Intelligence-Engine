@@ -1,7 +1,7 @@
 """
 Google+YouTube scraper agent. This file exposes:
 - google_agent: a ConversableAgent used for conversation/LLM comments (optional)
-- google_agent_handle_task(cfg): deterministic wrapper that calls your tools and returns a structured dict.
+- google_agent_handle_task(cfg): deterministic wrapper that calls the tools and returns a structured dict.
 
 Tool expectation:
 tools/google_youtube_scraper_tool.py -> scrape_keywords(keywords, num_results, save=True)
