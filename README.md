@@ -42,12 +42,12 @@ Create a .env file in the project root with:
 ## 🛠 How the Agents Work
 
 1. `UserProxyAgent`
-Acts as the interface for you.
+-Acts as the interface for you.
 
-You can ask something like "Generate a competitive market analysis of Atomberg smart fans."
+-You can ask something like "Generate a competitive market analysis of Atomberg smart fans."
 
 2. `PlanningAgent`
-Breaks the request into scraping sub-tasks:
+-Breaks the request into scraping sub-tasks:
 
 Google + YouTube
 
@@ -56,22 +56,22 @@ E-commerce + Reddit
 X (Twitter)
 
 3. `Scraper Agents`
-scraper_agent_google → Calls tools/google_youtube_scraper_tool.py
+-scraper_agent_google → Calls tools/google_youtube_scraper_tool.py
 
-scraper_agent_ecommerce → Calls tools/ecommerce_scraper_tool.py
+-scraper_agent_ecommerce → Calls tools/ecommerce_scraper_tool.py
 
-scraper_agent_social → Calls tools/x_scraper_tool.py
+-scraper_agent_social → Calls tools/x_scraper_tool.py
 
-All results are saved to /data/raw/ as JSON.
+ All results are saved to /data/raw/ as JSON.
 
 4. `InsightAgent`
-Reads all raw JSON files.
+-Reads all raw JSON files.
 
-Runs generate_insights() from insight_impl.py.
+-Runs generate_insights() from insight_impl.py.
 
-Produces metrics: Share of Voice, Share of Positive Voice, sentiment scores, etc.
+-Produces metrics: Share of Voice, Share of Positive Voice, sentiment scores, etc.
 
-Saves `/data/processed/analysis_report.json`.
+-Saves `/data/processed/analysis_report.json`.
 
 5. `Orchestration`
 OrchestratorAgent passes control between agents until the final report is ready.
@@ -79,20 +79,18 @@ OrchestratorAgent passes control between agents until the final report is ready.
 ---
 
 ## ▶️ Running the System
-From the project root:
+-From the project root:
 
 `python main.py`
 
-Example flow:
+-Example flow:
 
-`UserProxyAgent` sends your mission to the `OrchestratorAgent`.
+1. `UserProxyAgent` sends your mission to the `OrchestratorAgent`.
 
-Orchestrator assigns scraping jobs in parallel.
+2. Orchestrator assigns scraping jobs in parallel.
 
-`Scraper agents` save JSON files under `/data/raw/`.
+3. `Scraper agents` save JSON files under `/data/raw/`.
 
-`InsightAgent` analyzes everything.
+4. `InsightAgent` analyzes everything.
 
-The final report is saved at:
-
-`data/processed/analysis_report.json`
+5. The final report is saved at: `data/processed/analysis_report.json`
