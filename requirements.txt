@@ -1,0 +1,12 @@
+pyautogen
+requests
+beautifulsoup4
+serpapi
+praw
+python-dotenv
+groq
+transformers
+nltk
+torch
+deep-translator
+youtube-transcript-api

@@ -1,0 +1,192 @@
+{
+  "Atomberg Share of Voice Metrics": [
+    "Mentions Share (MS): 22.97% (34 / 148)",
+    "Engagement Share (ES): 36.22% (1142 / 3153)",
+    "Share of Positive Voice (SoPV): 14.29% (9 / 63)",
+    "Weighted SoV Score: 25.21%"
+  ],
+  "Brand Performance Overview": {
+    "Atomberg": [
+      "Mentions: 34",
+      "Positive: 9",
+      "Engagement: 1142",
+      "Weighted SoV: 25.21%",
+      "Accessibility: 0.00%",
+      "Avg. Star Rating: N/A"
+    ],
+    "Orient": [
+      "Mentions: 30",
+      "Positive: 19",
+      "Engagement: 16",
+      "Weighted SoV: 16.32%",
+      "Accessibility: 33.33%",
+      "Avg. Star Rating: 4.766666666666667"
+    ],
+    "Lg": [
+      "Mentions: 27",
+      "Positive: 8",
+      "Engagement: 1566",
+      "Weighted SoV: 26.56%",
+      "Accessibility: 0.00%",
+      "Avg. Star Rating: N/A"
+    ],
+    "Havells": [
+      "Mentions: 21",
+      "Positive: 9",
+      "Engagement: 21",
+      "Weighted SoV: 10.15%",
+      "Accessibility: 17.33%",
+      "Avg. Star Rating: 3.3333333333333335"
+    ],
+    "Usha": [
+      "Mentions: 17",
+      "Positive: 14",
+      "Engagement: 94",
+      "Weighted SoV: 11.00%",
+      "Accessibility: 21.33%",
+      "Avg. Star Rating: 3.7"
+    ],
+    "Crompton": [
+      "Mentions: 16",
+      "Positive: 4",
+      "Engagement: 313",
+      "Weighted SoV: 9.65%",
+      "Accessibility: 2.67%",
+      "Avg. Star Rating: 1.0"
+    ],
+    "Polycab": [
+      "Mentions: 2",
+      "Positive: 0",
+      "Engagement: 1",
+      "Weighted SoV: 0.69%",
+      "Accessibility: 0.00%",
+      "Avg. Star Rating: N/A"
+    ],
+    "Bajaj": [
+      "Mentions: 1",
+      "Positive: 0",
+      "Engagement: 0",
+      "Weighted SoV: 0.34%",
+      "Accessibility: 0.00%",
+      "Avg. Star Rating: N/A"
+    ]
+  },
+  "Best features that made the product get above 4/5 star rating in Reliance Digital": [
+    "1. havells smart fan -> Havells Koolt CHR04A0080 Personal Air Cooler with 24 ... -> Key Features - Aerodynamically Designed Fan - 3 Side Shell Honeycomb Pad - Optium Air-Delivery - 24 Litres Tank Capacity.",
+    "2. havells bldc fan -> Orient Electric Ullo 120 cm (1200 mm) BLDC Ceiling Fan ... -> Key Features - Low Power Consumption of 28 W - Remote Operated - Double Ball Bearing Motor - 2X Run Time On Inverter.",
+    "3. orient smart fan -> Orient Electric Ullo 120 cm (1200 mm) BLDC Ceiling Fan ... -> Low Power Consumption of 28 W, Remote Operated, Double Ball Bearing Motor, 2X Run Time On Inverter, Silent Operation, and more in Orient Electric Ullo 120 cm ...",
+    "4. orient smart fan -> Orient Electric Ullo 120 cm (1200 mm) BLDC Ceiling Fan ... -> Low Power Consumption of 28 W, Remote Operated, Double Ball Bearing Motor, 2X Run Time On Inverter, Silent Operation, and more in Orient Electric Ullo 120 cm ...",
+    "5. orient smart fan -> Orient Electric Ullo 120 cm (1200 mm) BLDC Ceiling Fan ... -> Low Power Consumption of 28 W, Remote Operated, Double Ball Bearing Motor, 2X Run Time On Inverter, Silent Operation, and more in Orient Electric Ullo 120 cm ..."
+  ],
+  "Sample Atomberg Reviews (Positive & Negative Snippets)": {
+    "Positive": [
+      "1. 🎯 best bldc ceiling fan in india 2024 | atomberg vs havells vs crompton vs orient - top picks!",
+      "2. atomberg bldc fan || how to install a bldc fan || best bldc celin fan #bldcfan"
+    ],
+    "Negative": [
+      "1. atomberg bldc ceiling fan sleep mode use #atombergfan #renesa #bldcfan atomberg fan remote function",
+      "2. atomberg renesa smart fan #shorts #youtubeshorts #smartgadgets #homeimprovement #amazonfinds"
+    ]
+  },
+  "Atomberg YouTube Transcript Sentiment Breakdown": [
+    "Transcript Sentiment: {'positive': 18, 'neutral': 0, 'negative': 22}"
+  ],
+  "Top Keywords by Sentiment": {
+    "Top 5 Positive Keywords": [
+      "('best', 19)",
+      "('quiet', 12)",
+      "('good', 11)",
+      "('great', 7)",
+      "('power', 7)"
+    ],
+    "Top 5 Negative Keywords": [
+      "('no', 39)",
+      "('service', 36)",
+      "('issue', 24)",
+      "('customer', 14)",
+      "('cost', 8)"
+    ],
+    "Top 5 Neutral Keywords": [
+      "(Filtered for irrelevant words)"
+    ]
+  },
+  "Plus Points of Atomberg's Competitors": {
+    "Orient": [
+      "High Wind Speed (mentioned 6 times)",
+      "Energy Efficiency (mentioned 3 times)",
+      "Smart Features (mentioned 3 times)"
+    ],
+    "Lg": [
+      "Smart Features (mentioned 7 times)",
+      "High Wind Speed (mentioned 6 times)",
+      "Affordable Pricing (mentioned 5 times)"
+    ]
+  },
+  "Summary": [
+    "Atomberg's overall performance indicates a strong online presence, with a mentions share of 22.97% and an engagement share of 36.22%. However, the brand's share of positive voice (SoPV) is relatively low at 14.29%. This suggests that while Atomberg is generating a significant amount of online buzz, the sentiment surrounding the brand is not entirely positive."
+  ],
+  "Competitive Landscape": [
+    "Atomberg's metrics compare favorably to its top competitors, with the exception of Orient, which seems to be gaining traction with its attractive design and affordable pricing. LG is also a strong competitor, with a high engagement share and a large number of positive mentions. However, Atomberg's biggest threat is Orient, which is rapidly closing the gap in terms of online mentions and engagement."
+  ],
+  "YouTube Insights": [
+    "The sentiment of YouTube video transcripts suggests that the content being produced is not entirely positive. The negative sentiment may be due to the fact that many of the videos are focused on installation and troubleshooting, which can be frustrating for customers. This suggests that Atomberg needs to focus on producing more positive and engaging content that showcases the benefits of its products."
+  ],
+  "Sentiment Drivers": {
+    "The top 5 reasons for positive feedback are": [
+      "1. **Smart features:** Customers appreciate the smart features of Atomberg's fans, such as remote control and energy monitoring.",
+      "2. **High speed:** The high speed of Atomberg's fans is a major selling point, with customers praising their ability to provide a cooling breeze.",
+      "3. **Good customer service:** Some customers have reported positive experiences with Atomberg's customer service, which has helped to build brand loyalty.",
+      "4. **Design and aesthetics:** The design and aesthetics of Atomberg's fans are appreciated by some customers, who find them visually appealing.",
+      "5. **Energy efficiency:** Atomberg's fans are seen as energy-efficient, which is a major concern for many customers."
+    ],
+    "The top 5 reasons for negative feedback are": [
+      "1. **Service issues:** Some customers have reported issues with Atomberg's service, including difficulty in getting support and resolving issues.",
+      "2. **Cost:** The cost of Atomberg's fans is seen as prohibitive by some customers, who find them too expensive.",
+      "3. **Installation issues:** Some customers have reported difficulties with installing Atomberg's fans, which has led to frustration and negative feedback.",
+      "4. **Lack of durability:** A few customers have reported issues with the durability of Atomberg's fans, which has led to negative feedback.",
+      "5. **Poor customer support:** Some customers have reported poor customer support from Atomberg, which has led to negative feedback and a loss of trust in the brand."
+    ]
+  },
+  "Actionable Recommendations": [
+    "1. **AI-powered customer service chatbot:** Implement an AI-powered customer service chatbot that can provide instant support to customers. This will help to reduce the burden on customer support teams and provide faster resolution to customer issues.",
+    "* Increases SoV: Improved customer service will lead to more positive mentions and engagement.",
+    "* Economic Impact: Reduces customer support costs and improves customer retention.",
+    "* Customer utility benefit: Faster and more convenient customer support.",
+    "2. **Influencer partnerships with home improvement creators:** Partner with popular home improvement influencers on YouTube and Instagram to showcase Atomberg's products in their content.",
+    "* Increases SoV: Partnerships with influencers will lead to more mentions and engagement.",
+    "* Economic Impact: Increased brand awareness and sales.",
+    "* Customer utility benefit: Exposes customers to new and innovative ways of using Atomberg's products.",
+    "3. **Energy efficiency education campaign:** Launch an educational campaign to raise awareness about the benefits of energy-efficient fans and how Atomberg's products can help customers reduce their energy consumption.",
+    "* Increases SoV: Educational content will lead to more mentions and engagement.",
+    "* Economic Impact: Increased sales and revenue.",
+    "* Customer utility benefit: Educates customers about the benefits of energy-efficient products.",
+    "4. **Subscription-based maintenance services:** Offer subscription-based maintenance services that provide customers with regular maintenance and support for their fans.",
+    "* Increases SoV: Improved customer service will lead to more positive mentions and engagement.",
+    "* Economic Impact: Increased revenue from subscription services.",
+    "* Customer utility benefit: Provides customers with peace of mind and convenience.",
+    "5. **Dynamic pricing strategy:** Implement a dynamic pricing strategy that adjusts prices based on demand and supply.",
+    "* Increases SoV: Dynamic pricing will lead to more engagement and mentions.",
+    "* Economic Impact: Increased revenue and profit margins.",
+    "* Customer utility benefit: Provides customers with competitive pricing and value for money.",
+    "6. **Hybrid cooling technology:** Develop a hybrid cooling technology that combines the benefits of fans and mist/evaporative cooling to provide customers with a more efficient and effective cooling solution.",
+    "* Increases SoV: Innovative technology will lead to more mentions and engagement.",
+    "* Economic Impact: Increased sales and revenue.",
+    "* Customer utility benefit: Provides customers with a more efficient and effective cooling solution.",
+    "7. **Trade-in program for old fans:** Launch a trade-in program that allows customers to trade in their old fans for discounts on new Atomberg fans.",
+    "* Increases SoV: Trade-in program will lead to more mentions and engagement.",
+    "* Economic Impact: Increased sales and revenue.",
+    "* Customer utility benefit: Provides customers with an incentive to upgrade to new and more efficient fans.",
+    "8. **User-generated content campaign:** Launch a user-generated content campaign that encourages customers to share their positive experiences with Atomberg's products.",
+    "* Increases SoV: Trade-in program will lead to more mentions and engagement.",
+    "* Economic Impact: Increased sales and revenue.",
+    "* Customer utility benefit: Provides customers with an incentive to upgrade to new and more efficient fans.",
+    "9. **Localized regional marketing campaigns:** Launch localized regional marketing campaigns that target specific regions and demographics.",
+    "* Increases SoV: Localized marketing will lead to more mentions and engagement.",
+    "* Economic impact: Increased sales and revenue.",
+    "* Customer utility benefit: Provides customers with targeted marketing and promotions that are relevant to their needs.",
+    "10. **Corporate bulk sales program:** Launch a corporate bulk sales program that targets large corporate clients and offers them discounted prices for bulk purchases.",
+    "* Increases SoV: Corporate sales will lead to more mentions and engagement.",
+    "* Economic impact: Increased revenue and profit margins.",
+    "* Customer utility benefit: Provides corporate clients with discounted prices and convenient purchasing options."
+  ]
+}
