@@ -1,6 +1,6 @@
 """
 Planner agent (deterministic creation of plan). Provides a create_plan() function
-and also exposes a ConversableAgent that can be used if you want LLM-driven planning.
+and also exposes a ConversableAgent that can be used as we want LLM-driven planning.
 """
 from __future__ import annotations
 from typing import Dict, Any, List
