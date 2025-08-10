@@ -6,39 +6,6 @@ The system is **conversational**, each specialized AI agent communicates with ot
 
 ---
 
-## 📂 Project Structure
-
-│
-├── main.py # Entry point: launches the multi-agent conversation
-│
-├── agents/ # All conversational AutoGen agents
-│ ├── init.py
-│ ├── agent_base.py # Shared agent settings/utilities
-│ ├── orchestrator_agent.py # Coordinates the full workflow
-│ ├── planning_agent.py # Breaks down user mission into sub-tasks
-│ ├── scraper_agent_google.py # Scrapes Google + YouTube
-│ ├── scraper_agent_ecommerce.py # Scrapes e-commerce + Reddit
-│ ├── scraper_agent_social.py # Scrapes X (Twitter)
-│ ├── insight_agent.py # Wraps generate_insights() and saves analysis
-│ ├── insight_impl.py # The actual data analysis logic (from your insight_generator.py)
-│ └── user_proxy_agent.py # Acts as the user interface
-│
-├── tools/ # Non-agent tools used by scraping agents
-│ ├── google_youtube_scraper_tool.py
-│ ├── ecommerce_scraper_tool.py
-│ ├── x_scraper_tool.py
-│
-├── data/
-│ ├── raw/ # JSON dumps from scrapers
-│ └── processed/ # Final processed insight reports
-│
-├── requirements.txt
-└── README.md
-├── .env
-└── config.py
-
----
-
 ## ⚙️ Installation
 
 ### 1️⃣ Clone this repository
